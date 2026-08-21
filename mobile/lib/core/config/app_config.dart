@@ -22,7 +22,7 @@ class AppConfig {
     };
 
     final defaultUrl = switch (environment) {
-      AppEnvironment.production => 'https://api.mon-domaine.com/api',
+      AppEnvironment.production => 'https://mariage-dusky-eta.vercel.app/api',
       AppEnvironment.staging => 'https://staging-api.mon-domaine.com/api',
       AppEnvironment.development => 'http://11.11.11.244:8000/api',
     };
