@@ -17,14 +17,14 @@
     "SESSION_DRIVER": "array",
     "VIEW_COMPILED_PATH": "/tmp/views"
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/:path*",
-      "destination": "/api/index.php/api/:path*"
+      "src": "/api/(.*)",
+      "dest": "/api/index.php/api/$1"
     },
     {
-      "source": "/:path*",
-      "destination": "/api/index.php"
+      "src": "/(.*)",
+      "dest": "/api/index.php"
     }
   ]
 }
