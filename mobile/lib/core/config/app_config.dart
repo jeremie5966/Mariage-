@@ -22,8 +22,8 @@ class AppConfig {
     };
 
     final defaultUrl = switch (environment) {
-        AppEnvironment.production =>
-          'https://mariage-tct2.vercel.app/api/index.php/api',
+      AppEnvironment.production =>
+        'https://mariage-tct2-jeremie5966s-projects.vercel.app/api/index.php/api',
       AppEnvironment.staging => 'https://staging-api.mon-domaine.com/api',
       AppEnvironment.development => 'http://11.11.11.244:8000/api',
     };
