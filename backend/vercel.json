@@ -20,7 +20,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "/api/index.php"
+      "destination": "/api/index.php/api/:path*"
     },
     {
       "source": "/:path*",
